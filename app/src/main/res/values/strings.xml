@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TelDemo</string>
+    <string name="no_data">Sorry ! No Data..</string>
+    <string name="btn_no">NoData</string>
+    <string name="btn_all">AllData</string>
+    <string name="waiting">coming soon</string>
+    <string name="request_failed">request failed</string>
+    <string name="server_error">Something wrong about the server</string>
+    <string name="net_error">Wops..Net Error..Click to Refresh! </string>
+</resources>

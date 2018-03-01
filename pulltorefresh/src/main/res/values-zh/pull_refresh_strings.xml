@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="pull_to_refresh_pull_label">pull to refresh…</string>
+  <string name="pull_to_refresh_release_label">loosen to refresh…</string>
+  <string name="pull_to_refresh_refreshing_label">refreshing…</string>
+</resources>
