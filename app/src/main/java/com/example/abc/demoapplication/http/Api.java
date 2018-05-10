@@ -1,8 +1,5 @@
 package com.example.abc.demoapplication.http;
 
-
-
-
 import com.example.abc.demoapplication.model.BaseBean;
 import com.example.abc.demoapplication.model.NewsBean;
 
