@@ -1,8 +1,5 @@
 package com.example.abc.demoapplication.http;
 
-
-
-
 import com.example.abc.demoapplication.utils.Constants;
 import com.example.abc.demoapplication.utils.LogUtils;
 
