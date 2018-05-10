@@ -13,7 +13,9 @@ public class NewsBean {
      */
 
     private String title;
+
     private String description;
+
     private String imageHref;
 
     public String getTitle() {
@@ -44,6 +46,7 @@ public class NewsBean {
     public NewsBean(){}
 
     public NewsBean(String title, String description) {
+
         this.title = title;
         this.description = description;
     }

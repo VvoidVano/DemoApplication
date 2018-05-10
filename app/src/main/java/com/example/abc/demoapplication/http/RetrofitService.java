@@ -16,7 +16,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitService {
 
-
     private static volatile Retrofit retrofit;
 
     private RetrofitService() {}
@@ -43,8 +42,4 @@ public class RetrofitService {
         }
         return retrofit;
     }
-
-
-
-
 }

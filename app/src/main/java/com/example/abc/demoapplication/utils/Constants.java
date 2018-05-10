@@ -9,5 +9,4 @@ public class Constants {
     public static int DEFAULT_TIMEOUT = 5000;
     //base host url end with /
     public static String APPBASE_URL = "https://dl.dropboxusercontent.com/";
-
 }

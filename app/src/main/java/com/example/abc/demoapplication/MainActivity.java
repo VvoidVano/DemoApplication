@@ -32,7 +32,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private static final String TAG = "MainActivity";
@@ -45,10 +44,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Context mContext;
     private List<NewsBean> newsBeanList;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         mContext = this;
@@ -56,9 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         init();
     }
 
-
-
     private void init() {
+
         findViewById(R.id.tv_no_data).setOnClickListener(this);
 
         pullToRefresh.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ScrollView>() {
@@ -77,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void getData() {
+
         Api api = RetrofitService.getRetrofit().create(Api.class);
         final Call<BaseBean<List<NewsBean>>> newsList = api.getNewsList();
         newsList.enqueue(new Callback<BaseBean<List<NewsBean>>>() {
@@ -104,14 +103,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 pullToRefresh.onRefreshComplete();
                 Toast.makeText(mContext, R.string.server_error, Toast.LENGTH_LONG).show();
                 LogUtils.logE(TAG, t.toString());
-
             }
         });
-
     }
 
     //filter data before show them
     private void showData(){
+
         List<NewsBean> showNewsList = new ArrayList<>();
         for (NewsBean bean:newsBeanList) {
             if(!TextUtils.isEmpty(bean.getTitle())){
@@ -119,10 +117,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
         listView.setAdapter(new NewsAdapter(mContext.getApplicationContext(), showNewsList));
-
     }
+
     @Override
     public void onClick(View view) {
+
         switch (view.getId()){
             case R.id.tv_no_data:
                 //when internet down, click image to request again

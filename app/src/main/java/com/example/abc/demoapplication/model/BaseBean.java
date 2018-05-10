@@ -7,6 +7,7 @@ package com.example.abc.demoapplication.model;
 public class BaseBean<T> {
 
     private String title;
+
     public T rows;
 
     public String getTitle() {

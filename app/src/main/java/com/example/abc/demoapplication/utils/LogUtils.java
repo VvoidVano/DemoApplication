@@ -4,6 +4,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 public class LogUtils {
+
 	private static String defaultTag = "Telstra";
 
 	private static boolean isShow = true;
